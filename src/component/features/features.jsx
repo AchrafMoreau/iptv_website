@@ -13,21 +13,21 @@ export default function Features(){
 
                     <div className="col-md-4 features">
                         <div className="icon">
-                            <i class="fa-sharp fa-solid fa-headset"></i>
+                            <i className="fa-sharp fa-solid fa-headset"></i>
                         </div>
                         <h2>Full Network Visibility</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
                     </div>
                     <div className="col-md-4 features">
                         <div className="icon">
-                            <i class="fa-sharp fa-solid fa-headset"></i>
+                            <i className="fa-sharp fa-solid fa-headset"></i>
                         </div>
                         <h2>Full Network Visibility</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
                     </div>
                     <div className="col-md-4 features">
                         <div className="icon">
-                            <i class="fa-sharp fa-solid fa-headset"></i>
+                            <i className="fa-sharp fa-solid fa-headset"></i>
                         </div>
                         <h2>Full Network Visibility</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>

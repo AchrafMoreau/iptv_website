@@ -48,7 +48,7 @@
     object-fit: contain;
 }
 
-@media (min-width:991px) {
+@media (max-width:991.98px)  {
     .features:nth-child(1), .features:nth-child(2){
         border-right: 2px solid #fff;
     }
