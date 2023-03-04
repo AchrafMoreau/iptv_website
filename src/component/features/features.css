@@ -1,10 +1,23 @@
+:root{
+    --font-h1: Georiga;
+    --font-p: arila;
+    
+    /* the color variable */
+
+    --color-praimary: #242582;
+    --color-secondary: #553d67;
+    --color-third: #f64c72;
+    --color-furth: #99738e;
+    --color-sixth: #2f2fa2;
+
+} 
 
 .hero{
     display: flex;
     text-align: center;
-    background-color: rgb(14, 14, 58);
+    background-color: var(--color-praimary);
     color: white;
-    border-radius: 15px;
+    border-radius: 10px;
     margin-top: 50px;
     padding-block: 10px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.568);
@@ -31,7 +44,7 @@
 } 
 
 .myslider{
-    animation: scroll 1.9s ease-in infinite;
+    animation: scroll_features 1.9s ease-in infinite;
     width: calc(250px * 10);
     display: flex;
 }
@@ -53,7 +66,7 @@
         border-right: 2px solid #fff;
     }
 }
-@keyframes scroll {
+@keyframes scroll_features {
     0%{
         transform: translateX(0);
     }

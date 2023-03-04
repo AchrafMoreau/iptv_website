@@ -1,25 +1,11 @@
 
-.hero1{
+.hero1, .hero2, .hero3{
     position: relative;
     color: white;
-    height: 90vh;
+    height: 100vh;
     padding-top: 12rem;
     padding-left: 5rem;
 
-}
-.hero2{
-    position: relative;
-    color: white;
-    height: 90vh;
-    padding-top: 12rem;
-    padding-left: 5rem;
-}
-.hero3{
-    position: relative;
-    color: white;
-    height: 90vh;
-    padding-top: 12rem;
-    padding-left: 5rem;
 }
 
 
