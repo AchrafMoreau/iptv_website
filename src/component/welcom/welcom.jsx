@@ -3,7 +3,6 @@ import './welcom.css';
 export default function Welcom(){
     return(
         <div>
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
             <div id="carouselExampleAutoplaying" className="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div className="carousel-inner">

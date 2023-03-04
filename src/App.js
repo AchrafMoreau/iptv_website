@@ -2,9 +2,11 @@ import './App.css';
 import Navbar from "./component/navbar/navbar"
 import Welcom from './component/welcom/welcom';
 import Features from './component/features/features';
-import Family from './component/family/family';
+import Family from './component/family/famly';
 import Packs from './component/pack/start';
-import Movies from './component/pack/new_films/film';
+import Movies from './component/movies_api/movies'
+import Footer from './component/footer/footer';
+
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
         <Family />
         <Packs />
         <Movies />
-
+        <Footer />
       </div>
   );
 }
