@@ -1,4 +1,3 @@
-import './App.css';
 import Navbar from "./component/navbar/navbar"
 import Welcom from './component/welcom/welcom';
 import Features from './component/features/features';
@@ -6,19 +5,19 @@ import Family from './component/family/famly';
 import Packs from './component/pack/start';
 import Movies from './component/movies_api/movies'
 import Footer from './component/footer/footer';
+import AboutUs from "./component/aboutUs/aboutUs";
+import { Route, Routes } from 'react-router-dom';
 
 
 function App() {
   return (
-      <div>
-        <Navbar />
-        <Welcom />
-        <Features />
-        <Family />
-        <Packs />
-        <Movies />
-        <Footer />
-      </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<> <Welcom /><Features /> <Family /> <Packs /> <Movies /> <Footer /></>}></Route>
+        <Route path="/aboutUs" element={<><AboutUs /> <Footer /> </>}></Route>
+      </Routes>
+    </>
   );
 }
 

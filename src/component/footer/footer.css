@@ -1,5 +1,9 @@
 
 .footer{
-    height: 250px;
     background-color: rgb(27, 20, 58);
+}
+.icons *{
+    font-size: 2rem;
+    margin-inline: 1rem;
+    cursor: pointer;
 }

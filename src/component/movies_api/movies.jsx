@@ -26,17 +26,17 @@ export default function Movies(){
     },[])
 
     
-    const containerRef = useRef(null);
+    // const containerRef = useRef(null);
 
-    useEffect(() => {
-      const container = containerRef.current;
-      if (container) {
-        container.scrollLeft = container.scrollWidth - container.clientWidth;
-      }
-    }, []);
+    // useEffect(() => {
+    //   const container = containerRef.current;
+    //   if (container) {
+    //     container.scrollLeft = container.scrollWidth - container.clientWidth;
+    //   }
+    // }, []);
     
 
-    const ShowCard = tvshow.map((elm, index)=> <TvShow key={index} {...elm} ref={containerRef}/>)
+    const ShowCard = tvshow.map((elm, index)=> <TvShow key={index} {...elm} />)
     const movieCard = movies.map((elm, index) => <MoviesCard key={index} {...elm} />)
 
 
@@ -44,15 +44,15 @@ export default function Movies(){
     return(
         <>
             <h1 className="text-center my-5">New Movies</h1>
-            <div className="container slider">
-                <div className="movie_api mt-5">
+            <div className="container-fluid slider">
+                <div className="movie_api">
                     {movieCard}
                     {movieCard}
                 </div>
-                {/* <div className="show_api">
+                <div className="show_api">
                     {ShowCard}
                     {ShowCard}
-                </div> */}
+                </div>
 
             </div>
         </>

@@ -5,6 +5,9 @@
     height: 100vh;
     padding-top: 12rem;
     padding-left: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -23,13 +26,13 @@
 }
 
 .hero1::before{
-    background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0)), url(../../assete/wall1.jpg) no-repeat center center/cover;
+    background: linear-gradient( rgba(0, 0, 0, 0), var(--body-color)), url(../../assete/wall1.jpg) no-repeat center center/cover;
 }
 .hero2::before{
-    background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0)), url(../../assete/wall2.jpg) no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0), var(--body-color)), url(../../assete/wall2.jpg) no-repeat center center/cover;
 }
 .hero3::before{
-    background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0)), url(../../assete/wall3.jpg) no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0), var(--body-color)), url(../../assete/wall3.jpg) no-repeat top;
 }
 @keyframes scaleImage {
     0% {

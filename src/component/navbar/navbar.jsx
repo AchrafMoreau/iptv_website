@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './navbar.css';
+import { Link } from 'react-router-dom';
 export default function Navbar(){
 
     const [currentScroll, setCurrentScroll] = useState(window.scrollY);
@@ -21,10 +22,8 @@ export default function Navbar(){
         const newScrollPosition = window.scrollY;
         if (newScrollPosition > currentScroll) {
           setDownOrUp('scrollMynav');
-          console.log('down')
         } else {
             setDownOrUp('');
-            console.log('up')
         }
         setCurrentScroll(newScrollPosition);
       };
@@ -47,16 +46,16 @@ export default function Navbar(){
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
                     <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#">Home</a>
+                        <Link to='/' className="nav-link" aria-current="page" >Home</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">About Us</a>
+                        <Link className="nav-link" to="/">About Us</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Contact</a>
+                        <Link className="nav-link" to='/'>Contact</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link">Store</a>
+                        <Link to='./aboutUs' className="nav-link">About Us</Link>
                     </li>
                     </ul>
                 </div>

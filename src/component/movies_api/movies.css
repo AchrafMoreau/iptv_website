@@ -1,21 +1,39 @@
 .slider{
     overflow: hidden;
+    position: relative;
+    margin-bottom: 8rem;
+}
+.slider::after, .slider::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+.slider::after{
+    box-shadow: 5px 0 30px 30px #0c081b;
+    left: 0;
+}
+.slider::before{
+    box-shadow: -5px 0 30px 30px #0c081b;
+    z-index: 100;
+    right: 0;
 }
 .movie_api{
     display: flex;
     flex-direction: row;
-    gap: 10px;
     color: rgb(0, 0, 0);
     width: calc(150px * 40);
-    animation: scroll 40s ease  infinite;
+    animation: scroll 30s ease-in-out  infinite;
+    
 }
 .show_api{
     display: flex;
-    flex-direction: row;
-    gap: 10px;
+    flex-direction: row-reverse;
+    
     color: rgb(0, 0, 0);
-    width: calc(150px * 40);
-    /* animation: scroll_tv 40s ease  infinite; */
+    width: calc(160px * 40);
+    transform: translateX(calc(-160px * 33));
+    animation: scroll_tv 30s ease-in-out  infinite;
 }
 
 
@@ -27,7 +45,8 @@
     flex-direction: column;
     height: 100%;
     box-shadow: 5px 5px 10px black;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    margin-inline: 5px;
 }
 .poster_film img{
     width: 150px;
@@ -42,15 +61,15 @@
         transform: translateX(0);
     }
     100%{
-        transform: translateX(calc(-150px * 20));
+        transform: translateX(calc(-160px * 20));
     }
 }
 @keyframes scroll_tv {
     0%{
-        transform: translateX(0);
+        transform: translateX(calc(-160px * 33));
     }
     100%{
-        transform: translateX(calc(150px * 20));
+        transform: translateX(-2080px);
     }
 }
 

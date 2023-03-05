@@ -1,0 +1,58 @@
+
+#aboutUs .load{
+    height: 100vh;
+    background:linear-gradient(rgba(255, 255, 255, 0),var(--body-color)) ,url(../../assete/co-worker.jpg)no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bar{
+    border-right: 2px solid #fff ;
+}
+.right{
+    padding-right: 150px;
+    position: relative;
+}
+
+.right::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100px;
+    height: 2px;
+    background-color: #fff;
+}
+.left{
+    position: relative;
+    padding-left: 150px;
+}
+.left::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background-color: #fff;
+}
+
+@keyframes popUp {
+    0%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@media (max-width:991.98px) {
+    .left, .right{
+        padding: 20px;
+        border: none;
+        border-bottom: 1px solid #fff;
+    }
+    .left::after, .right::after{
+        display: none;
+    }
+}
