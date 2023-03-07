@@ -30,7 +30,6 @@ export default function AboutUs(){
                             </p>
                             <ul>
                                 <li>Quality 🌟: We use only the best hardware and software to ensure a smooth and reliable IPTV experience for our customers.</li>
-                                <li></li>
                                 <li>Affordability 💰: We offer some of the most competitive prices in the market, without sacrificing quality or features.</li>
                                 <li>Flexibility 🤸‍♀️: We understand that every customer has different needs and preferences, which is why we offer a range of packages and options to choose from.</li>
                                 <li>Customer support 🙋‍♂️: Our friendly and knowledgeable support team is available 24/7 to help you with any questions or issues you may have.</li>

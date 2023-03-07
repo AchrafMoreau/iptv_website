@@ -1,6 +1,10 @@
 import './welcom.css';
+import Packs from '../pack/start';
+import { Link } from "react-scroll";
+
 
 export default function Welcom(){
+
     return(
         <div>
 
@@ -8,36 +12,33 @@ export default function Welcom(){
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <div className="hero1">
-                            <div className="row text-center">
-                                <h1>Onilne cinema in your smartphone</h1>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat in perferendis, aperiam id rem aliquid assumenda eius provident unde, facilis quos dolor similique ullam quod odit iste, consequuntur expedita deleniti!</p>
+                            <div className="row home text-center">
+                                <h1>Unlimited Entertainment at You Hand</h1>
+                                <p>Movie lovers can enjoy our extensive selection of blockbuster hits, timeless classics, and independent films. Whether you're in the mood for a romantic comedy or a high-octane action flick, we have something for everyone.</p>
                                 <div className="butn">
-                                    <button className="btn btn-primary">learn more</button>
-                                    <button className="btn btn-danger">start now</button>
+                                    <button className="btn"><Link to="Packs" smooth={true} offset={1}>start now</Link></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <div className="hero2">
-                            <div className="row text-center">
-                                <h1>Onilne cinema  in your smartphone</h1>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat in perferendis, aperiam id rem aliquid assumenda eius provident unde, facilis quos dolor similique ullam quod odit iste, consequuntur expedita deleniti!</p>
+                            <div className="row home text-center">
+                                <h1>Explore the World of Cinema with Our Curated Collection</h1>
+                                <p>Cinema enthusiasts can explore our curated collection of foreign films, art-house favorites, and award-winning documentaries. Immerse yourself in the world of cinema and discover new perspectives and cultures.</p>
                                 <div className="butn">
-                                    <button className="btn btn-primary">learn more</button>
-                                    <button className="btn btn-danger">start now</button>
+                                    <button className="btn" >start now</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <div className="hero3">
-                            <div className="row text-center">
-                                <h1>Onilne cinema in your smartphone</h1>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat in perferendis, aperiam id rem aliquid assumenda eius provident unde, facilis quos dolor similique ullam quod odit iste, consequuntur expedita deleniti!</p>
+                            <div className="row home text-center">
+                                <h1>Never Miss a Game with Our Comprehensive Sports Coverage</h1>
+                                <p>Sports fans can catch all the action on our live sports channels. From soccer and basketball to football and tennis, we cover all the major events and tournaments. Don't miss a single game, match, or race with our comprehensive sports coverage.</p>
                                 <div className="butn">
-                                    <button className="btn btn-primary">learn more</button>
-                                    <button className="btn btn-danger">start now</button>
+                                    <button className="btn">start now</button>
                                 </div>
                             </div>
                         </div>

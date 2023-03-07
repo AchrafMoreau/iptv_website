@@ -1,7 +1,7 @@
 import "./packs.css"
 export default function Packs(){
     return(
-        <div className="plan">
+        <div className="plan" id="Packs">
             <svg sxmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#242582" fillOpacity="1" d="M0,64L48,58.7C96,53,192,43,288,53.3C384,64,480,96,576,90.7C672,85,768,43,864,48C960,53,1056,107,1152,117.3C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
             <div className="container packs text-center">
                 <h1 className="mb-5">Chose Your Plan</h1>

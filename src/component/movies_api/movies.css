@@ -23,7 +23,7 @@
     flex-direction: row;
     color: rgb(0, 0, 0);
     width: calc(150px * 40);
-    animation: scroll 30s ease-in-out  infinite;
+    animation: scroll 70s ease-in-out  infinite;
     
 }
 .show_api{
@@ -33,7 +33,7 @@
     color: rgb(0, 0, 0);
     width: calc(160px * 40);
     transform: translateX(calc(-160px * 33));
-    animation: scroll_tv 30s ease-in-out  infinite;
+    animation: scroll_tv 70s ease-in-out infinite;
 }
 
 

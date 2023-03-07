@@ -1,0 +1,21 @@
+.Contact{
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0), var(--body-color)), url(../../assete/wall2.jpg) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myfrom{
+    width: 60%;
+    transform: translateY(-150px);
+    background-color: #ffffff63;
+    border-radius: 10px ;
+    padding: 50px 30px;
+}
+
+
+@media (max-width:760px) {
+    .myfrom{
+        width: 90%;
+    }
+}
