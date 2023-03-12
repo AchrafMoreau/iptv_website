@@ -57,16 +57,44 @@
 }
 
 
-
+/*  ---------- countUp style ------------ */
 
 .num{
-    padding: 50px;
+    padding: 5px;
     font-size: 3rem;
-    border: 1px solid red;
+    color: var(--color-third);
+    font-weight: bold;
+}
+.countup{
+    margin-top: 150px;
+
+    
+}
+.countup .col-md-4{
+    border-radius: 50% ;
+    background-color: var(--body-color);
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: inset 5px 5px 20px , 5px 5px 20px rgb(0, 0, 0);
 }
 
+.sign{
+    color: #fff;
+    font-size: 2rem;
+}
 
-
+@media (max-width:760px) {
+    .countup .col-md-4{
+        margin-block: 20px;
+        width: 250px;
+        height: 250px;
+    }
+}
 
 
 

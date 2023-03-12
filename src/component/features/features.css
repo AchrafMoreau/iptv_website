@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 :root{
     --font-h1: Georiga;
     --font-p: arila;
@@ -12,6 +13,12 @@
     --body-color: #0c081b;
 
 } 
+h1, h2, h3{
+    font-family:'Noto Serif Display', serif;
+}
+p, li, a{
+    font-family: 'Poppins', sans-serif;
+}
 body{
     background-color: #0c081b;
     color: white;

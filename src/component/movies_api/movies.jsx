@@ -41,6 +41,8 @@ export default function Movies(){
     const ShowCard = tvshow.map((elm, index)=> <TvShow key={index} {...elm} />)
     const movieCard = movies.map((elm, index) => <MoviesCard key={index} {...elm} />)
 
+
+
     return(
         <>
             <Fade left>
@@ -56,19 +58,7 @@ export default function Movies(){
                     {ShowCard}
                 </div>
             </div>
-            <div className="container">
-                <div className="row text-center">
-                    <div className="col-md-4">
-                        <div className="num" data-goal='300'>0</div>
-                    </div>
-                    <div className="col-md-4">
-                        <div className="num" data-goal='300'>0</div>
-                    </div>
-                    <div className="col-md-4">
-                        <div className="num" data-goal='300'>0</div>
-                    </div>
-                </div>
-            </div>
+
         </>
     )
 }

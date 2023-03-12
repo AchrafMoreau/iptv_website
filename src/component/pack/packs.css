@@ -1,4 +1,12 @@
 
+.plan{
+    background-color: var(--color-praimary);
+    margin-top: 8rem;
+}
+
+.plan svg{
+    background-color: #0c081b;
+}
 .packs{
     height: 100%;
 
@@ -16,7 +24,7 @@
 
 .pack_content{
     background-color: var(--color-secondary);
-    padding-bottom: 100px;
+    padding-bottom: 20px;
     border-radius:  5px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.534);
     transition: all .5s;
@@ -24,16 +32,40 @@
     position: relative;
 }
 .pack_content:hover{
-    scale: 1.08;
+    scale: 1.02;
 }
 
-.pack_content h1{
+.pack_content .upper{
     background:linear-gradient(to bottom,var( --color-sixth), var(--color-secondary));
-    padding-bottom: 80px;
-    padding-top: 20px;
-    color: black;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
-    z-index: 100;
+}
+.price{
+    font-size: 3.2rem;
+    color: var(--body-color);
+    font-weight: bold;
+}
+.price span{
+    font-weight: normal;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+.pack_feature li::marker{
+    content: '\2713';
+    font-size: 1.5rem;
+    color: rgb(102, 253, 102);
+}
+.pack_feature li{
+    padding-left: 10px;
+    font-weight: normal;
+}
+.upper p{
+    color:#c2c2c2;
+}
+.upper h1{
+    font-weight: bold;    
 }
 /* .pack_content:nth-child(2):after{
     content: "";
@@ -48,15 +80,29 @@
 } */
 
 .buy_btn{
+    font-family: 'poppins', 'Arial', sans-serif;
+    font-size: 1rem;
+    padding: 10px 20px ;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 2rem;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+    transition: all 0.5s;
+    box-shadow: 0 2px 10px var(--color-third);
+}
+.buy_btn:hover{
     background-color: var(--color-third);
 }
-.plan{
-    background-color: var(--color-praimary);
-    margin-top: 8rem;
-}
-
-.plan svg{
-    background-color: #0c081b;
+.buy_btn:active{
+    background-color: transparent;
+    scale: 0.9;
 }
 
 @media (max-width:991.98px)  {

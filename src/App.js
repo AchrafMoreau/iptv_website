@@ -9,6 +9,7 @@ import AboutUs from "./component/aboutUs/aboutUs";
 import Faq from "./component/FAQ/faq";
 import Contact from "./component/contact/contact";
 import { Route, Routes } from 'react-router-dom';
+import Count from "./component/count/count";
 
 
 function App() {
@@ -16,10 +17,31 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<> <Welcom /><Features /> <Family /> <Packs /> <Movies /> <Footer /></>}></Route>
-        <Route path="/aboutUs" element={<><AboutUs /> <Footer /> </>}></Route>
-        <Route path="/FAQ" element={<> <Faq /> <Footer /></>}></Route>
-        <Route path="/contact" element={<><Contact /> <Footer /></>}></Route>
+        <Route path="/" element={<> 
+            <Welcom />
+            <Features /> 
+            <Family /> 
+            <Count />
+            <Packs /> 
+            <Movies />
+            <Footer />
+            </>}>
+        </Route>
+        <Route path="/aboutUs" element={<>
+            <AboutUs />
+            <Footer />
+            </>}>
+        </Route>
+        <Route path="/FAQ" element={<> 
+            <Faq />
+            <Footer />
+            </>}>
+        </Route>
+        <Route path="/contact" element={<>
+            <Contact /> 
+            <Footer />
+            </>}>
+        </Route>
       </Routes>
     </>
   );

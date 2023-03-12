@@ -11,46 +11,63 @@ export default function Packs(){
                 </Fade>
                 <div className="grid">
                     <div className="pack_content">
-                        <h1>pack one</h1>
-                        <h4>tv</h4>
+                        <div className="upper">
+                            <h1>1 month</h1>
+                            <p>INSTANT DELIVERY</p>
+                        </div>
+                        <h4 className="price">25<span>$</span></h4>
                         <Fade cascade>
-                            <ul className="pack_feature">
-                                <li>155+ Channels</li>
-                                <li>Stream live or recorded shows</li>
-                                <li>Record up to 5 shows at once</li>
-                                <li>On Demand titles availlable</li>
+                            <ul className="pack_feature text-start">
+                                <li>Over 10.000 Channels</li>
+                                <li>Over 50.000 Movies & TV Shows</li>
+                                <li>HD & SD & FHD Channels</li>
+                                <li>TV Guide (EPG)</li>
+                                <li>Support All Devices</li>
+                                <li>24/7 support</li>
+                                <li>99.9% Uptime</li>
                             </ul>
                         </Fade>
-                        <button className="btn buy_btn">BUY NOW</button>
+                        <button className="buy_btn">BUY NOW</button>
                     </div>
-                    <Tada>
+                    <Tada >
                         <div className="pack_content">
-                            <h1>pack one</h1>
-                            <h4>tv</h4>
+                            <div className="upper">
+                                <h1>3 month</h1>
+                                <p>INSTANT DELIVERY</p>
+                            </div>
+                            <h4 className="price">60<span>$</span></h4>
                             <Fade cascade>
-                                <ul className="pack_feature">
-                                    <li>155+ Channels</li>
-                                    <li>Stream live or recorded shows</li>
-                                    <li>Record up to 5 shows at once</li>
-                                    <li>On Demand titles availlable</li>
+                                <ul className="pack_feature text-start">
+                                    <li>Over 10.000 Channels</li>
+                                    <li>Over 50.000 Movies & TV Shows</li>
+                                    <li>HD & SD & FHD Channels</li>
+                                    <li>TV Guide (EPG)</li>
+                                    <li>Support All Devices</li>
+                                    <li>24/7 support</li>
+                                    <li>99.9% Uptime</li>
                                 </ul>
                             </Fade>
-                            <button className="btn buy_btn">BUY NOW</button>
+                            <button className="buy_btn">BUY NOW</button>
                         </div>
-
                     </Tada>
-                    <div className="pack_content ">
-                        <h1>pack one</h1>
-                        <h4>tv</h4>
+                    <div className="pack_content">
+                        <div className="upper">
+                            <h1>1 Year</h1>
+                            <p>INSTANT DELIVERY</p>
+                        </div>
+                        <h4 className="price">200<span>$</span></h4>
                         <Fade cascade>
-                            <ul className="pack_feature">
-                                <li>155+ Channels</li>
-                                <li>Stream live or recorded shows</li>
-                                <li>Record up to 5 shows at once</li>
-                                <li>On Demand titles availlable</li>
+                            <ul className="pack_feature text-start">
+                                <li>Over 10.000 Channels</li>
+                                <li>Over 50.000 Movies & TV Shows</li>
+                                <li>HD & SD & FHD Channels</li>
+                                <li>TV Guide (EPG)</li>
+                                <li>Support All Devices</li>
+                                <li>24/7 support</li>
+                                <li>99.9% Uptime</li>
                             </ul>
                         </Fade>
-                        <button className="btn buy_btn">BUY NOW</button>
+                        <button className="buy_btn">BUY NOW</button>
                     </div>
                 </div>
             </div>
