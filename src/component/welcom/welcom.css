@@ -25,14 +25,14 @@
     background-color: var(--color-third);
     color: white;
     font-size: 1.3rem;
-    box-shadow: 5px 5px 20px #ffffff59;
+    box-shadow: 0 2px 15px var(--color-third);
     text-transform: capitalize;
 }
 .butn button:hover{
     background-color: transparent;
     color: rgb(255, 255, 255);
     border: 1px solid;
-    transform: translate(5px, 5px);
+    transform: translateY(-5px);
     transition: all .5s;
     box-shadow: none;
 }

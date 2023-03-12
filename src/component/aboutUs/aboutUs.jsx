@@ -4,7 +4,7 @@ export default function AboutUs(){
         <>
             <section id="aboutUs">
                 <div className="container-fluid text-center load">
-                    <div className="row">
+                    <div className="row aboutUs_title">
                         <h1>Who We Are ?</h1>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam ex vitae praesentium quia sunt voluptas nobis perferendis, similique nemo impedit amet, laborum ullam. Neque eos ipsam nemo doloremque excepturi tenetur!</p>
                     </div>

@@ -7,6 +7,9 @@
     align-items: center;
     
 }
+.aboutUs_title{
+    width: 50%;
+}
 .bar{
     border-right: 2px solid #fff ;
 }
@@ -47,6 +50,9 @@
     }
 }
 @media (max-width:991.98px) {
+    .aboutUs_title{
+        width: 90%;
+    }
     .left, .right{
         padding: 20px;
         border: none;

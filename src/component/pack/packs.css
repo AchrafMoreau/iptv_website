@@ -35,7 +35,7 @@
     text-transform: uppercase;
     z-index: 100;
 }
-.pack_content:nth-child(2):after{
+/* .pack_content:nth-child(2):after{
     content: "";
     width: 130px;
     height:130px;
@@ -45,7 +45,7 @@
     background-color: var(--color-third);
     clip-path: ellipse(80px 80px at 100% 0%);
     z-index: 1;
-}
+} */
 
 .buy_btn{
     background-color: var(--color-third);

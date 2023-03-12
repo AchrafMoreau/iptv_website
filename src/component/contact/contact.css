@@ -1,21 +1,129 @@
-.Contact{
-    height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0), var(--body-color)), url(../../assete/wall2.jpg) ;
+#contact{
+    overflow-x: hidden;
+}
+.contact_title{
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0), var(--body-color)), url(../../assete/contact.jpg) no-repeat center center/cover ;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .myfrom{
     width: 60%;
-    transform: translateY(-150px);
-    background-color: #ffffff63;
+    background-color: #ffffff0e;
+    backdrop-filter: blur(20px);
     border-radius: 10px ;
     padding: 50px 30px;
+    margin-bottom: 100px;
 }
+.contact{
+    transform: translateY(-100px);
+    background-color: var(--body-color);
+    padding: 20px 30px;
+    border-radius: 10px;
+    border-color: var(--color-third);
+    width: 70%;
+}
+
+.contact i{
+    color: var(--color-third);
+}
+.contact h2{
+    text-transform: capitalize;
+}
+.text{
+    margin-top: 20px;
+}
+.text > p{
+    margin-bottom: -5px;
+}
+.contact_content:nth-child(1), .contact_content:nth-child(2){
+    border-right: 1px solid var(--color-third);
+}
+.submit button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+
+}
+input:invalid ~ span{
+    display: block;
+}
+.err{
+    color: var(--color-third);
+    text-transform: capitalize;
+    display: none;
+}
+.errbtn{
+    color: var(--color-third);
+    text-transform: capitalize;
+}
+/* --------------------------------  button style ----------------------------- */
+.bubbly-button{
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--color-third);
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+}
+.bubbly-button:focus {
+    outline: 0;
+}
+  
+.send{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em 2em;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: rgba(72, 184, 27);
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 15px rgba(72, 184, 27);
+}
+.send:focus{
+    outline: none;
+}
+.send:active{
+    transform: scale(0.9);
+    background-color: darken(var(--color-third), 5%);
+    box-shadow: 0 2px 25px rgba(72, 184, 27, 0.74);
+    
+}
+.bubbly-button:active{
+    transform: scale(0.9);
+    background-color: darken(var(--color-third), 5%);
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+
+/*  --------------- End Style Button ------------------- */
 
 
 @media (max-width:760px) {
     .myfrom{
         width: 90%;
     }
+    .contact_content:nth-child(1), .contact_content:nth-child(2){
+        border-bottom: 1px solid var(--color-third);
+        border-right: none;
+    }
+    .contact{
+        width: 90%;
+    }
+
 }
