@@ -1,4 +1,6 @@
-
+body{
+    overflow-x: hidden !important;
+}
 .plan{
     background-color: var(--color-praimary);
     margin-top: 8rem;
@@ -23,28 +25,46 @@
 }
 
 .pack_content{
-    background-color: var(--color-secondary);
+    background-color: transparent;
     padding-bottom: 20px;
     border-radius:  5px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.534);
-    transition: all .5s;
     cursor: pointer;
     position: relative;
+    transition: all .5s;
+    border: 1px solid;
+}
+.pack_content::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(var(--color-sixth), var(--color-furth),  var(--color-sixth));
+    transition: opacity 0.5s linear;
+    z-index: -1;
+    opacity: 0;
+}
+.pack_content:hover::before{
+    opacity: 1;
 }
 .pack_content:hover{
     scale: 1.02;
+    border-color: transparent;
+    
 }
 
 .pack_content .upper{
-    background:linear-gradient(to bottom,var( --color-sixth), var(--color-secondary));
     padding-bottom: 20px;
     padding-top: 40px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
+    line-height: 0px;
 }
 .price{
     font-size: 3.2rem;
-    color: var(--body-color);
+    color: rgb(102, 253, 102);
     font-weight: bold;
 }
 .price span{
@@ -67,17 +87,6 @@
 .upper h1{
     font-weight: bold;    
 }
-/* .pack_content:nth-child(2):after{
-    content: "";
-    width: 130px;
-    height:130px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: var(--color-third);
-    clip-path: ellipse(80px 80px at 100% 0%);
-    z-index: 1;
-} */
 
 .buy_btn{
     font-family: 'poppins', 'Arial', sans-serif;
@@ -86,19 +95,19 @@
     -webkit-appearance: none;
     appearance: none;
     margin-top: 2rem;
-    color: #fff;
+    color: var(--color-third);
     letter-spacing: 2px;
-    font-weight: bold;
     border-radius: 5px;
-    border: none;
+    border: 1px solid var(--color-third);
     cursor: pointer;
     background-color: transparent;
     position: relative;
     transition: all 0.5s;
-    box-shadow: 0 2px 10px var(--color-third);
 }
 .buy_btn:hover{
+    box-shadow: 0 2px 5px var(--color-third);
     background-color: var(--color-third);
+    color: #fff;
 }
 .buy_btn:active{
     background-color: transparent;

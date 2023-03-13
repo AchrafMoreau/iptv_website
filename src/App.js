@@ -21,9 +21,9 @@ function App() {
             <Welcom />
             <Features /> 
             <Family /> 
+            <Movies />
             <Count />
             <Packs /> 
-            <Movies />
             <Footer />
             </>}>
         </Route>

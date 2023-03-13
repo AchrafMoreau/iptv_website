@@ -52,7 +52,47 @@ export default function Packs(){
                     </Tada>
                     <div className="pack_content">
                         <div className="upper">
+                            <h1>6 month</h1>
+                            <p>INSTANT DELIVERY</p>
+                        </div>
+                        <h4 className="price">200<span>$</span></h4>
+                        <Fade cascade>
+                            <ul className="pack_feature text-start">
+                                <li>Over 10.000 Channels</li>
+                                <li>Over 50.000 Movies & TV Shows</li>
+                                <li>HD & SD & FHD Channels</li>
+                                <li>TV Guide (EPG)</li>
+                                <li>Support All Devices</li>
+                                <li>24/7 support</li>
+                                <li>99.9% Uptime</li>
+                            </ul>
+                        </Fade>
+                        <button className="buy_btn">BUY NOW</button>
+                    </div>
+                </div>
+                <div className="grid mt-5">
+                    <div className="pack_content">
+                        <div className="upper">
                             <h1>1 Year</h1>
+                            <p>INSTANT DELIVERY</p>
+                        </div>
+                        <h4 className="price">25<span>$</span></h4>
+                        <Fade cascade>
+                            <ul className="pack_feature text-start">
+                                <li>Over 10.000 Channels</li>
+                                <li>Over 50.000 Movies & TV Shows</li>
+                                <li>HD & SD & FHD Channels</li>
+                                <li>TV Guide (EPG)</li>
+                                <li>Support All Devices</li>
+                                <li>24/7 support</li>
+                                <li>99.9% Uptime</li>
+                            </ul>
+                        </Fade>
+                        <button className="buy_btn">BUY NOW</button>
+                    </div>
+                    <div className="pack_content">
+                        <div className="upper">
+                            <h1>24 Month</h1>
                             <p>INSTANT DELIVERY</p>
                         </div>
                         <h4 className="price">200<span>$</span></h4>

@@ -54,7 +54,6 @@ export default function Navbar({ path }){
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto">
-                
                 <CustomLink href='/'>home</CustomLink>
                 <CustomLink href='/faq'>faq</CustomLink>
                 <CustomLink href='/contact'>contact</CustomLink>

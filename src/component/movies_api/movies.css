@@ -1,7 +1,6 @@
 .slider{
     overflow: hidden;
     position: relative;
-    margin-bottom: 8rem;
 }
 .slider::after, .slider::before{
     content: "";
@@ -45,7 +44,9 @@
     box-shadow: 5px 5px 10px black;
     margin-bottom: 10px;
     margin-inline: 5px;
+    transform: translateX(-20px);
 }
+
 
 .poster_film img{
     width: 150px;
@@ -55,7 +56,17 @@
     display: flex;
     justify-content: space-between;
 }
-
+.all_api{
+    overflow-x: hidden;
+}
+.entertament{
+    margin-top: 8rem;
+}
+.text{
+    padding-inline: 50px;
+    width: 80%;
+    margin: auto;
+}
 
 /*  ---------- countUp style ------------ */
 
@@ -87,6 +98,8 @@
     color: #fff;
     font-size: 2rem;
 }
+
+
 
 @media (max-width:760px) {
     .countup .col-md-4{
