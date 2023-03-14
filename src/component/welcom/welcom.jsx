@@ -2,6 +2,8 @@ import './welcom.css';
 import Packs from '../pack/start';
 import { Link } from "react-scroll";
 import { Fade } from 'react-reveal';
+// import { BrowserRouter as  Link } from 'react-router-dom';
+
 
 
 export default function Welcom(){
@@ -19,7 +21,7 @@ export default function Welcom(){
                                 </Fade>
                                 <p>Movie lovers can enjoy our extensive selection of blockbuster hits, timeless classics, and independent films. Whether you're in the mood for a romantic comedy or a high-octane action flick, we have something for everyone.</p>
                                 <div className="butn">
-                                    <Link to="Packs" delay={false} smooth={false} offset={1}><button className="btn">start now</button></Link>
+                                    <Link to="Packs" delay={0} smooth={false} offset={1}><button className="btn">start now</button></Link>
                                 </div>
                             </div>
                         </div>
@@ -32,7 +34,7 @@ export default function Welcom(){
                                 </Fade>
                                 <p>Cinema enthusiasts can explore our curated collection of foreign films, art-house favorites, and award-winning documentaries. Immerse yourself in the world of cinema and discover new perspectives and cultures.</p>
                                 <div className="butn">
-                                    <Link to="Packs" delay={false} smooth={false} offset={1}><button className="btn">start now</button></Link>
+                                    <Link to="Packs" delay={0} smooth={false} offset={1}><button className="btn">start now</button></Link>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +47,7 @@ export default function Welcom(){
                                 </Fade>
                                 <p>Sports fans can catch all the action on our live sports channels. From soccer and basketball to football and tennis, we cover all the major events and tournaments. Don't miss a single game, match, or race with our comprehensive sports coverage.</p>
                                 <div className="butn">
-                                    <Link to="Packs" delay={false} smooth={false} offset={1}><button className="btn">start now</button></Link>
+                                    <Link to="Packs" delay={0} smooth={false} offset={1}><button className="btn">start now</button></Link>
                                 </div>
                             </div>
                         </div>

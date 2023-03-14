@@ -27,12 +27,14 @@ body{
 .pack_content{
     background-color: transparent;
     padding-bottom: 20px;
+    padding-inline: 10px;
     border-radius:  5px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.534);
     cursor: pointer;
     position: relative;
     transition: all .5s;
     border: 1px solid;
+    
 }
 .pack_content::before{
     position: absolute;

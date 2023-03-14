@@ -60,7 +60,7 @@
     overflow-x: hidden;
 }
 .entertament{
-    margin-top: 8rem;
+    margin-top: 5rem;
 }
 .text{
     padding-inline: 50px;
@@ -68,7 +68,7 @@
     margin: auto;
 }
 
-/*  ---------- countUp style ------------ */
+/*  ------------------------------- countUp style ---------------------------------------- */
 
 .num{
     padding: 5px;
@@ -77,15 +77,14 @@
     font-weight: bold;
 }
 .countup{
-    margin-top: 150px;
+    margin-block: 150px;
 
-    
 }
 .countup .col-md-4{
     border-radius: 50% ;
     background-color: var(--body-color);
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -106,6 +105,10 @@
         margin-block: 20px;
         width: 250px;
         height: 250px;
+    }
+    .text{
+        width: 90%;
+        padding: 0;
     }
 }
 

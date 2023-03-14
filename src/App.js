@@ -10,6 +10,7 @@ import Faq from "./component/FAQ/faq";
 import Contact from "./component/contact/contact";
 import { Route, Routes } from 'react-router-dom';
 import Count from "./component/count/count";
+import Testimonails from "./component/testimonials/testimonails";
 
 
 function App() {
@@ -21,9 +22,10 @@ function App() {
             <Welcom />
             <Features /> 
             <Family /> 
-            <Movies />
             <Count />
+            <Movies />
             <Packs /> 
+            <Testimonails />
             <Footer />
             </>}>
         </Route>
