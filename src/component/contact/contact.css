@@ -31,10 +31,10 @@
 .contact h2{
     text-transform: capitalize;
 }
-.text{
+.contact .text{
     margin-top: 20px;
 }
-.text > p{
+.contact .text > p{
     margin-bottom: -5px;
 }
 .contact_content:nth-child(1), .contact_content:nth-child(2){

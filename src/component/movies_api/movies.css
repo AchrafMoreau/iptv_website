@@ -62,7 +62,7 @@
 .entertament{
     margin-top: 5rem;
 }
-.text{
+.movie_title{
     padding-inline: 50px;
     width: 80%;
     margin: auto;
@@ -106,7 +106,7 @@
         width: 250px;
         height: 250px;
     }
-    .text{
+    .movie_title{
         width: 90%;
         padding: 0;
     }

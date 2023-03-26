@@ -1,7 +1,8 @@
 import "./contact.css";
-import { db } from "../firebase/firebase"
-import { addDoc, collection } from "firebase/firestore"
+import { db } from "../firebase/firebase";
+import { addDoc, collection } from "firebase/firestore";
 import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact(){
     
@@ -9,6 +10,7 @@ export default function Contact(){
     const [last, setLast] = useState('')
     const [email, setemail] = useState('')
     const [message, setMessage] = useState('')
+    const [focused, setFocused] = useState(false)
     
     const [isSend, setIsSend] = useState(false)
 
@@ -26,10 +28,15 @@ export default function Contact(){
     //             console.log("somthing wrong", err)
     //         })
     // }, [])
-
+    const handelFocuse = (e) =>{
+        setFocused(true);
+    }
 
     function handesubmit(e){
         e.preventDefault()
+
+        emailjs.sendForm("service_jdnctqn", "template_1ilq5jo", e.target, "trqhRCbZtHlconUsf")
+
         if( message.length > 2 && email.length > 5) {
             addDoc(colRef , {
                 email: email,
@@ -55,7 +62,6 @@ export default function Contact(){
             </div>
             <div className="container contact">
                 <div className="row text-center">
-
                     <div className="col-md-4 contact_content ">
                         <div className="icon">
                             <i className="fa-solid fa-phone"></i>
@@ -99,8 +105,12 @@ export default function Contact(){
                                 placeholder="First name" 
                                 aria-label="First name" 
                                 onChange={(e) => setName(e.target.value)}
+                                name="first_name"
                                 value={name} 
                                 pattern="[A-za-z0-9]{3,16}$" 
+                                required   
+                                onBlur={handelFocuse}
+                                focused={focused.toString()}
                                 />
                         <span className="err">more than three character please</span>
                     </div>
@@ -110,6 +120,7 @@ export default function Contact(){
                                 placeholder="Last name" 
                                 aria-label="Last name"
                                 onChange={(e) => setLast(e.target.value)}
+                                name="last_name"
                                 value={last}
                                 />
                     </div>
@@ -120,8 +131,11 @@ export default function Contact(){
                             placeholder="email" 
                             aria-label="email"
                             onChange={(e) => setemail(e.target.value)}
+                            name="email"
                             value={email}
-                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            required
+
                             />
                     <span className="err">Please you have to write your email like this :  characters@characters.domain</span>
                 </div>
@@ -130,8 +144,10 @@ export default function Contact(){
                                 placeholder="Leave your message here" 
                                 id="floatingTextarea" rows={6}
                                 value={message}
-                                onChange={(e)=> setMessage(e.target.value)}>
-                                
+                                onChange={(e)=> setMessage(e.target.value)}
+                                name="message"
+                                required
+                            >
                     </textarea>
                     <span className="err">you can't submit without a message</span>
                 </div>
@@ -140,7 +156,7 @@ export default function Contact(){
                     <button
                         className={isSend ? "send": 'bubbly-button'}
                         >{isSend? "Send": "Submit"}</button>
-
+                    
                     {/* <button className={isSend ? isSend.massage: "bubbly-button"}>{isSend? isSend.class: "Submit"}</button> */}
 
                 </div>

@@ -11,6 +11,7 @@ import Contact from "./component/contact/contact";
 import { Route, Routes } from 'react-router-dom';
 import Count from "./component/count/count";
 import Testimonails from "./component/testimonials/testimonails";
+import Sells from "./component/sells/buyNow";
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
             <Footer />
             </>}>
         </Route>
+        <Route path='/buyNow' element={<Sells />}/>
       </Routes>
     </>
   );

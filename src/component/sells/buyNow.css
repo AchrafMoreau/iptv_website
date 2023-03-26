@@ -1,0 +1,29 @@
+.a{
+    color: unset;
+    text-decoration: none;
+}
+.contectGrid{
+    margin-top: 12rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.buyNow{
+    width: 90%;
+    grid-column: span 2;
+    transform: translateY(150px);
+}
+input:focus{
+    background-color: aqua;
+    border-color: var(--color-third) !important;
+    box-shadow: 0 0 10px var(--color-third) !important;
+}
+.package{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+
+}
+.package .pack_content{
+    background: linear-gradient(var(--color-sixth), var(--color-furth),  var(--color-sixth));
+}

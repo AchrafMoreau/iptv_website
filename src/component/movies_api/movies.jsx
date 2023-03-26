@@ -46,7 +46,7 @@ export default function Movies(){
     return(
         <>
             <div className="container mt-5">
-                <div className="row text-center text">
+                <div className="row text-center movie_title">
                     <Fade right>
                         <h1 className="mt-5">Unlimited Entertainment at Your Hand</h1>
                     </Fade>

@@ -9,7 +9,7 @@ export default function AboutUs(){
                         
                     </div>
                 </div>
-                <div className="container content">
+                <div className="container content my-5">
                     <div className="row context">
                         <div className="col-md-6 bar right">
                             <h1>Our Story 📚🎥</h1>

@@ -93,7 +93,7 @@ body{
 .buy_btn{
     font-family: 'poppins', 'Arial', sans-serif;
     font-size: 1rem;
-    padding: 10px 20px ;
+    padding: 10px 0;
     -webkit-appearance: none;
     appearance: none;
     margin-top: 2rem;
@@ -115,10 +115,24 @@ body{
     background-color: transparent;
     scale: 0.9;
 }
+.bestseller{
+    background: linear-gradient(var(--color-third), var(--color-furth),  var(--color-sixth));
+}
+.bestseller:hover{
+    border-color: linear-gradient(var(--color-third), var(--color-furth),  var(--color-sixth));
+}
+.link{
+    padding: 10px 30px;
+    text-decoration: none;
+    color:inherit;
+}
 
 @media (max-width:991.98px)  {
     .grid{
         flex-direction: column;
         margin-inline: 20px;
+    }
+    body{
+        overflow-x: hidden !important;
     }
 }
