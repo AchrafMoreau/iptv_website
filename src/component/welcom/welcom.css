@@ -2,7 +2,7 @@
 .hero1, .hero2, .hero3{
     position: relative;
     color: white;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 12rem;
     display: flex;
     justify-content: center;

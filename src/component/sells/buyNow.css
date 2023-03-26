@@ -1,29 +1,60 @@
-.a{
-    color: unset;
-    text-decoration: none;
-}
+
 .contectGrid{
-    margin-top: 12rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid;
+    margin-top: 13rem;
+    border-color: var(--color-sixth) ;
+    box-shadow: 0px 0px 20px var(--color-sixth);
+    width: 90%;
 }
 
 .buyNow{
     width: 90%;
-    grid-column: span 2;
-    transform: translateY(150px);
+}
+
+.phoneNumber{
+    margin-block: auto;
+
+}
+.phoneNumber input{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.buyNow form{
+    background: #a7a7a75e ; 
+    padding: 20px 30px;
+    border-radius: 10px;
 }
 input:focus{
-    background-color: aqua;
     border-color: var(--color-third) !important;
     box-shadow: 0 0 10px var(--color-third) !important;
 }
 .package{
-    width: 70%;
+    transform: translate(-30px, -80px);
     margin: auto;
     text-align: center;
-
 }
+
+
 .package .pack_content{
     background: linear-gradient(var(--color-sixth), var(--color-furth),  var(--color-sixth));
+    border: 1px solid var(--color-sixth);
+}
+@media (max-width:760px) {
+    .contectGrid{
+        display: flex;
+        flex-direction: column;
+    }
+    .buyNow{
+        width: 100%;
+    }
+    .package{
+        transform: none;
+    }
+
+    .buyNow input{
+        margin-block: 20px;
+    }
+
 }

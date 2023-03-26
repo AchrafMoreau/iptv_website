@@ -24,7 +24,7 @@ export default function Features(){
                         </div>
                         <div className="col-md-4 features">
                             <div className="icon">
-                                <i className="fa-sharp fa-solid fa-headset"></i>
+                                <i className="fa-sharp fa-regular fa-high-definition"></i>
                             </div>
                             <h2>Full Network Visibility</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
