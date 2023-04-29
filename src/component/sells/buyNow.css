@@ -1,7 +1,7 @@
 
 .contectGrid{
     border: 1px solid;
-    margin-top: 13rem;
+    margin-block: 13rem;
     border-color: var(--color-sixth) ;
     box-shadow: 0px 0px 20px var(--color-sixth);
     width: 90%;
@@ -9,6 +9,7 @@
 
 .buyNow{
     width: 90%;
+    margin: auto;
 }
 
 .phoneNumber{
@@ -21,10 +22,11 @@
     border: none;
     outline: none;
 }
-.buyNow form{
+.buyNow form, .pyment{
     background: #a7a7a75e ; 
     padding: 20px 30px;
     border-radius: 10px;
+    margin: auto;
 }
 input:focus{
     border-color: var(--color-third) !important;
@@ -36,15 +38,22 @@ input:focus{
     text-align: center;
 }
 
-
 .package .pack_content{
     background: linear-gradient(var(--color-sixth), var(--color-furth),  var(--color-sixth));
     border: 1px solid var(--color-sixth);
 }
+.err_form{
+    color: rgb(236, 61, 61);
+    margin-top: 10px;
+}
 @media (max-width:760px) {
+    body{
+        height: 100%;
+    }
     .contectGrid{
         display: flex;
         flex-direction: column;
+        height: 100%;
     }
     .buyNow{
         width: 100%;

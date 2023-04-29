@@ -1,15 +1,31 @@
 import "./features.css";
-import ESPN from '../../assete/ESPN.png';
-import FOX1 from '../../assete/FOXsport.png';
-import FOX2 from '../../assete/FOXsport2.png';
-import EuroSport from '../../assete/EuroSport.png';
-import BeinSport from '../../assete/BeinSport.png';
+import ESPN from '../../assete/Walt-Disney-Home-Video.png';
+import FOX1 from '../../assete/ESPN-Plus.png';
+import FOX2 from '../../assete/ESPN-Deportes.png';
+import EuroSport from '../../assete/10-News-First.png';
+import BeinSport from '../../assete/channel9.png';
+import Neflix from "../../assete/Netflix.png";
+import first_news from "../../assete/Fox-Sports.png";
+import HBO from "../../assete/HBO-Home-Box-Office.png";
+import SBS from "../../assete/SBS.png" ;
+import cbs from "../../assete/CBS-Media-Columbia-Broadcasting-System.png";
+import sky from "../../assete/Sky-Sports.png";
 import Fade from 'react-reveal/Fade';
 
 
 export default function Features(){
+
+    let channels = [ESPN, FOX1, FOX2, EuroSport, BeinSport, Neflix, first_news, HBO, SBS,cbs, sky ,ESPN, FOX1, FOX2, EuroSport, BeinSport, Neflix, first_news, HBO, SBS, cbs, sky]
+    const display = channels.map((elm, key)=>{
+        return(
+            <div key={key} className="channel_name">
+                <img src={elm} alt="" />
+            </div>
+        )
+    })
+    console.log(display)
     return(
-        <div>
+        <div className="gradient">
             <Fade top>
 
                 <div className="container hero">
@@ -42,38 +58,11 @@ export default function Features(){
 
             <div className="container channel">
                 <div className="myslider">
-                    <div className="channel_name">
-                        <img src={ESPN} alt="" />
-                    </div>
-                    <div className="channel_name">
-                        <img src={BeinSport} alt="" />
-                    </div>
-                    <div className="channel_name">
-                        <img src={FOX1} alt="" />
-                    </div>
-                    <div className="channel_name">
-                        <img src={FOX2} alt="" />
-                    </div>
-                    <div className="channel_name">
-                        <img src={EuroSport} alt="" />
-                    </div>
-                    <div className="channel_name">
-                        <img src={ESPN} alt="" />
-                    </div>
-                    <div className="channel_name">
-                        <img src={BeinSport} alt="" />
-                    </div>
-                    <div className="channel_name">
-                        <img src={FOX1} alt="" />
-                    </div>
-                    <div className="channel_name">
-                        <img src={FOX2} alt="" />
-                    </div>
-                    <div className="channel_name">
-                        <img src={EuroSport} alt="" />
-                    </div>
+                    {display}
+                    <h1>sa</h1>
                 </div>
             </div>
+
         </div>
     )
 }

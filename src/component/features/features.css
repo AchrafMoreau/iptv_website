@@ -30,7 +30,6 @@ body{
 .hero{
     display: flex;
     text-align: center;
-    background-color: var(--color-praimary);
     color: white;
     margin-top: 8rem;
     padding-block: 10px;
@@ -57,19 +56,26 @@ body{
     margin-bottom: 20px;
 }
 .channel{
-    margin-top: 8rem;
+    margin-top: 12rem;
+    /* border: 1px solid red; */
+    transform: translateY(-150px);
     overflow: hidden;
+    width: 100%;
 } 
+.gradient{
+    background: rgb(12,8,27);
+    background: linear-gradient(0deg, rgba(12,8,27,1) 5%, var(--color-praimary) 50%, rgba(12,8,27,1) 80%);
+}
 
 .myslider{
     animation: scroll_features 40s ease infinite;
-    width: calc(250px * 10);
+    width: calc(250px * 22);
     display: flex;
 }
 
 .channel_name{
-    height: 80px;
-    width: 150px;
+    height: 180px;
+    width: 180px;
     padding: 20px;
     margin-inline: 50px;
 }
@@ -93,6 +99,6 @@ body{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(calc(-250px * 5));
+        transform: translateX(calc(-250px * 11));
     }
 }

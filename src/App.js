@@ -45,7 +45,7 @@ function App() {
             <Footer />
             </>}>
         </Route>
-        <Route path='/buyNow' element={<Sells />}/>
+        <Route path='/buyNow' element={<><Sells /> <Footer /></>}/>
       </Routes>
     </>
   );
